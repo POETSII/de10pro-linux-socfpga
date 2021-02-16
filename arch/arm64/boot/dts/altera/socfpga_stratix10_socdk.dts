@@ -55,6 +55,9 @@
 			osc1 {
 				clock-frequency = <25000000>;
 			};
+			f2s_free_clk {
+				clock-frequency = <50000000>;
+			};
 		};
 
 		eccmgr {
@@ -75,7 +78,7 @@
 };
 
 &gmac0 {
-	status = "okay";
+	status = "disabled";
 	phy-mode = "rgmii";
 	phy-handle = <&phy0>;
 
@@ -116,17 +119,17 @@
 	status = "okay";
 };
 
-&usb0 {
+&usb1 {
 	status = "okay";
 	disable-over-current;
 };
 
 &watchdog0 {
-	status = "okay";
+	status = "disabled";
 };
 
 &i2c1 {
-	status = "okay";
+	status = "disabled";
 	clock-frequency = <100000>;
 	i2c-sda-falling-time-ns = <890>;  /* hcnt */
 	i2c-sdl-falling-time-ns = <890>;  /* lcnt */
