@@ -17,7 +17,7 @@
 #include "socfpga_stratix10.dtsi"
 
 / {
-	model = "SoCFPGA Stratix 10 SoCDK";
+	model = "SoCFPGA Stratix 10 DE10-Pro";
 
 	aliases {
 		serial0 = &uart0;
